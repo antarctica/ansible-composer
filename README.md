@@ -31,14 +31,18 @@ This role is designed for internal use but if useful can be shared publicly.
 
 ## Changelog
 
+### 0.1.3 - October 2014
+
+* Fixing README
+
 ### 0.1.2 - October 2014
 
 * Adjusting role for inclusion in BARC
 
 ### 0.1.1 - September 2014
 
-* ensures system wide install location exists before moving there
+* Ensures system wide install location exists before moving there
 
 ### 0.1.0 - September 2014
 
-* initial version
+* Initial version
