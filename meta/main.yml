@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  description: Installs Composer package manager as a global utility
+  author: British Antarctic Survey - Web and Applications Team
+  company: British Antarctic Survey
+  license: Open Government Licence V2
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+      - trusty
+
+armadillo_info:
+  name: Composer
+  version: 0.1.2
+  source: git@stash.ceh.ac.uk:7999/barc/composer.git
+  dependencies:
+  - git@stash.ceh.ac.uk:7999/barc/php.git#v0.2.3
+
+dependencies:
+  - php
