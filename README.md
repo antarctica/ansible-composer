@@ -29,11 +29,19 @@ This role is designed for internal use but if useful can be shared publicly.
 
 * `php`
 
+### Variables
+
+* `composer_controller_user_username`
+    * The username of the controller user, used for management tasks, if enabled
+    * This variable **must** be a valid unix username
+    * Default: "controller"
+
 ## Changelog
 
 ### 0.1.4 - October 2014
 
 * Updating dependencies
+* Controller username can now be configured using a variable
 
 ### 0.1.3 - October 2014
 
