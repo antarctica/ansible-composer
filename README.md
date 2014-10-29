@@ -31,6 +31,10 @@ This role is designed for internal use but if useful can be shared publicly.
 
 ## Changelog
 
+### 0.1.4 - October 2014
+
+* Updating dependencies
+
 ### 0.1.3 - October 2014
 
 * Fixing README
