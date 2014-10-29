@@ -1,0 +1,4 @@
+---
+# Default variables - inventory or playbook overrides will be respected
+
+composer_controller_user_username: controller
