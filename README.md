@@ -28,7 +28,9 @@ This role is designed for internal use but if useful can be shared publicly.
     * This variable **must** be a valid unix username
     * Default: "controller"
 
+## Contributing
 
+This project welcomes contributions, see `CONTRIBUTING` for our general policy.
 
 ## Developing
 
@@ -46,4 +48,6 @@ After releases the *master* branch should be merged with *develop* to restart th
 
 Issues, bugs, improvements, questions, suggestions and other tasks related to this package are managed through the BAS Web & Applications Team Jira project ([BASWEB](https://jira.ceh.ac.uk/browse/BASWEB)).
 
+## License
 
+Copyright 2014 NERC BAS. Licensed under the MIT license, see `LICENSE` for details.
