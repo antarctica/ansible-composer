@@ -1,5 +1,9 @@
 # Composer (`composer`) - Changelog
 
+## 0.1.6 - March 2015
+
+* Fixing tasks to prevent unnecessary change reporting
+
 ## 0.1.5 - December 2014
 
 * Preparing role for public release

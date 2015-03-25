@@ -1,12 +1,22 @@
 ---
 # Installs Composer package manager as a global utility
 
+- name: determine if composer installed
+  stat: path=/usr/local/bin/composer
+  register: composer_fact_composer_installed
+
 - name: download composer
   get_url: url=https://getcomposer.org/installer dest="/home/{{ composer_controller_user_username }}/composer.phar" mode=644
+  when: composer_fact_composer_installed.stat.exists == false
+
 - name: install composer
   command: "php /home/{{ composer_controller_user_username }}/composer.phar"
+  when: composer_fact_composer_installed.stat.exists == false
 
 - name: ensure directory exists for system wide installation
   file: path=/usr/local/bin owner=root group=root state=directory
+  when: composer_fact_composer_installed.stat.exists == false
+
 - name: make composer available system wide
   command: "mv /home/{{ composer_controller_user_username }}/composer.phar /usr/local/bin/composer"
+  when: composer_fact_composer_installed.stat.exists == false
