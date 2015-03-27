@@ -2,3 +2,7 @@
 # Default variables - inventory or playbook overrides will be respected
 
 composer_controller_user_username: controller
+composer_controller_user_enabled: true
+
+composer_app_user_username: app
+composer_app_user_enabled: true

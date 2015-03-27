@@ -1,0 +1,4 @@
+---
+
+- name: ensure composer alias exsists for app user
+  lineinfile: dest="/home/{{ composer_app_user_username }}/.bash_aliases" line='alias composer="php -d allow_url_fopen=1 /usr/local/bin/composer"' insertafter="EOF" state=present

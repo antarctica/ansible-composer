@@ -1,0 +1,8 @@
+---
+# These variables override role defaults but can be overriden by playbooks
+
+composer_controller_user_username: "{{ core_controller_user_username }}"
+composer_controller_user_enabled: "{{ core_controller_user_enabled }}"
+
+composer_app_user_username: "{{ core_app_user_username }}"
+composer_app_user_enabled: "{{ core_app_user_enabled }}"

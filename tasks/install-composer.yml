@@ -1,0 +1,13 @@
+---
+
+- name: download composer
+  get_url: url=https://getcomposer.org/installer dest="/home/{{ composer_controller_user_username }}/composer.phar" mode=644
+
+- name: install composer
+  command: "php -d allow_url_fopen=1 /home/{{ composer_controller_user_username }}/composer.phar"
+
+- name: ensure directory exists for system wide installation
+  file: path=/usr/local/bin owner=root group=root state=directory
+
+- name: make composer available system wide
+  command: "mv /home/{{ composer_controller_user_username }}/composer.phar /usr/local/bin/composer"
