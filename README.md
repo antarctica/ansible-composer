@@ -22,6 +22,21 @@ This role is designed for internal use but if useful can be shared publicly.
 
 * `php`
 
+### Limitations
+
+Due to security restrictions imposed by the `php` role the *allow_url_fopen* configuration option is disabled by default.
+Composer requires this option to be enabled to operate correctly.
+
+To workaround this additional command line arguments need to be used when using composer:
+
+```shell
+php -d allow_url_fopen=1 /usr/local/bin/composer
+```
+
+If using the *controller* or *app* users, enabled by default by the `core` role, a suitable alias for the modified composer command will be setup for you.
+
+This means, when using either of these users, composer can be used as normal (e.g. `composer install` will just work). For any other user either a similar alias will be needed or the full command must be used.
+
 ### Variables
 
 * `composer_controller_user_username`
