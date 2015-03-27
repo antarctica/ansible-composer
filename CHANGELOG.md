@@ -1,5 +1,9 @@
 # Composer (`composer`) - Changelog
 
+## 0.1.7 - March 2015
+
+* Fixing compatibility with updated PHP role
+
 ## 0.1.6 - March 2015
 
 * Fixing tasks to prevent unnecessary change reporting
