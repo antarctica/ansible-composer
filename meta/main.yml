@@ -11,10 +11,10 @@ galaxy_info:
 
 armadillo_info:
   name: Composer
-  version: 0.1.6
+  version: 0.1.7
   source: git@stash.ceh.ac.uk:7999/barc/composer.git
   dependencies:
-  - git@stash.ceh.ac.uk:7999/barc/php.git#v0.2.5
+  - git@stash.ceh.ac.uk:7999/barc/php.git#v1.0.0
 
 dependencies:
   - php
